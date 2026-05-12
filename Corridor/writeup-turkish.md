@@ -139,4 +139,4 @@ Bu odada:
 
 ---
 
-happy hacking! ( its my 3rd writeup Im just a beginner )
+happy hacking! ( its my 6rd writeup Im just a beginner )
