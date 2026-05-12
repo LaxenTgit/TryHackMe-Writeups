@@ -1,5 +1,3 @@
----
-
 # TryHackMe: Corridor — IDOR Zafiyeti ve Python Otomasyonu
 
 > **Room:** [Corridor](https://tryhackme.com/room/corridor)  
