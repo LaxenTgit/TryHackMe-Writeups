@@ -1,5 +1,3 @@
----
-
 # TryHackMe: Corridor — IDOR via Custom Python Automation
 
 > **Room:** [Corridor](https://tryhackme.com/room/corridor)  
