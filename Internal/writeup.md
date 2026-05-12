@@ -2,7 +2,7 @@
 # 🕵️‍♂️ Internal - TryHackMe Writeup
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium%2FHard-orange)
-![Category](https://img.shields.io/badge/Category-WordPress%20|%20Pivoting%20|%20Jenkins-blue)
+![Category](https://img.shields.io/badge/Category-WordPress%20%7C%20Pivoting%20%7C%20Jenkins-blue)
 ![Platform](https://img.shields.io/badge/Platform-TryHackMe-green)
 
 > **Author:** Miraç Akkuş (LatenT)  
