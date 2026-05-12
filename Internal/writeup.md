@@ -1,9 +1,9 @@
 ```markdown
 # 🕵️‍♂️ Internal - TryHackMe Writeup
 
-![Difficulty](https://img.shields.io/badge/Difficulty-Medium%2FHard-orange)
-![Category](https://img.shields.io/badge/Category-WordPress%20%7C%20Pivoting%20%7C%20Jenkins-blue)
-![Platform](https://img.shields.io/badge/Platform-TryHackMe-green)
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium%2FHard-orange?style=for-the-badge)
+![Category](https://img.shields.io/badge/Category-WordPress%20%7C%20Pivoting%20%7C%20Jenkins-blue?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-TryHackMe-green?style=for-the-badge)
 
 > **Author:** Miraç Akkuş (LatenT)  
 > **Date:** May 2026  
