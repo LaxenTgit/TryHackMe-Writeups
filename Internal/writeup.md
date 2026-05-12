@@ -1,7 +1,3 @@
- Writeup'ınızı GitHub için daha profesyonel ve teknik olarak etkileyici hale getirelim. İşte geliştirilmiş versiyon:
-
----
-
 ```markdown
 # 🕵️‍♂️ Internal - TryHackMe Writeup
 
