@@ -185,31 +185,8 @@ Table
     iframe as SSRF Vector: <iframe> forces PDF renderer to fetch and render external content server-side
     403 Bypass Techniques: IP-based restrictions fail when requests originate from the server itself
 
-📁 Repository Structure
-plain
-Copy
-
-.
-├── README.md
-├── nmap/
-│   └── md2pdf_scan.nmap
-├── exploits/
-│   ├── iframe_ssrf.md
-│   └── curl_exploit.sh
-├── output/
-│   └── admin_content.pdf
-└── screenshots/
-    ├── web_interface.png
-    ├── admin_403.png
-    ├── pdf_flag.png
-    └── network_tab.png
-
-🚩 Flags
-Table
-Flag	Location	Value
-Flag	Extracted from PDF rendering of http://127.0.0.1:5000/admin	THM{...}
-
-    Note: Flag values are dynamic per TryHackMe instance. The vulnerability chain remains consistent.
+🚩 Flag
+**flag:** flag{1f4a2b6ffeaf4707c43885d704eaee4b}
 
     ⚠️ Legal Disclaimer: This writeup is for educational and research purposes only. Always obtain explicit written authorization before testing systems you do not own.
 
