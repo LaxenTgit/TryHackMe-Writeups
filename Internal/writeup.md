@@ -1,4 +1,3 @@
-```markdown
 # 🕵️‍♂️ Internal - TryHackMe Writeup
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium%2FHard-orange?style=for-the-badge)
