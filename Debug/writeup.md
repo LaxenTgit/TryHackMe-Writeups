@@ -142,6 +142,8 @@ cat /home/james/user.txt
 
 **User Flag:** `THM{7e37c84a66cc40b1c6bf700d08d28c20}`
 
+![User Flag](screenshots/userflag.png)
+
 ---
 
 ## 🚀 Phase 4: Privilege Escalation (MOTD Poisoning)
