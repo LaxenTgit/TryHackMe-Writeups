@@ -284,7 +284,7 @@ cat /home/james/user.txt
 
 **Kullanıcı Flag'i:** `THM{7e37c84a66cc40b1c6bf700d08d28c20}`
 
-![User Flag](screenshots/userflag.png)
+![User Flag](screenshots/userflag2.png)
 
 ---
 
@@ -386,7 +386,7 @@ cat /root/root.txt
 
 **Root Flag'i:** `THM{3c8c3d0fe758c320d158e32f68fabf4b}`
 
-![Root Flag](screenshots/rootflag.png)
+![Root Flag](screenshots/rootflag2.png)
 
 ---
 
