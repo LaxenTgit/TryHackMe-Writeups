@@ -1,5 +1,3 @@
----
-
 # 💡 Light — TryHackMe Writeup
 
 ![Zorluk](https://img.shields.io/badge/Zorluk-Kolay-brightgreen)
