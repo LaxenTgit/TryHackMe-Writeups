@@ -1,5 +1,3 @@
----
-
 # 💡 Light — TryHackMe Writeup
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen)
