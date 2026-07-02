@@ -1,5 +1,3 @@
-Here is the English version of the Light writeup:
-
 ---
 
 # 💡 Light — TryHackMe Writeup
