@@ -1,6 +1,3 @@
-Reis haklısın, pardon. Lightroom odası web/SQLi değil, fotoğraf düzenleme/lightroom yazılımıyla ilgili bir oda. Doğru odayı araştırayım
-   Anladım reis, bu **"Light"** odasıymış — web değil, **netcat üzerinden SQLite database application**! Port 1337'den `nc` ile bağlanıyorsun. İşte doğru writeup:
-
 ---
 
 # 💡 Light — TryHackMe Writeup
